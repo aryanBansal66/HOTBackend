@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HouseOfTalent" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="HOT.Banner" Member="Banners">
+    <Type Name="Banner">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ImageBanner" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.ChatFree" Member="ChatFrees">
+    <Type Name="ChatFree">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Times" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Astroid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Chats" Member="Chats">
+    <Type Name="Chat">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChatMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MessageTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MessageDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Sendername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SenderEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Recievername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Recieveremail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Onlineofflinestatus" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Messageresdedstatus" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Coins" Member="Coins">
+    <Type Name="Coin">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CValue" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Coins" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BG" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Comment" Member="Comments">
+    <Type Name="Comment">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Comment" Member="Comment1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="comentid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="datec" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Competition" Member="Competitions">
+    <Type Name="Competition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Competitionname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Liveon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Endon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionBasis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DisqualifyCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WinningAMT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EntryFee" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Seats" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SeatsLeftPercent" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bgImage" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Rules" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.CompetitionStatistics" Member="CompetitionStatistics">
+    <Type Name="CompetitionStatistic">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Prize" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.FeedBack" Member="FeedBacks">
+    <Type Name="FeedBack">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Feedback" Member="Feedback1" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ExtraColumn" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Date" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Follow" Member="Follows">
+    <Type Name="Follow">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Followername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="followed" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.History" Member="Histories">
+    <Type Name="History">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Historyid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Historydate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Historyamt" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HistoryType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.JoinCompetition" Member="JoinCompetitions">
+    <Type Name="JoinCompetition">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Competitionname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Liveon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Endon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionBasis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DisqualifyCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WinningAMT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EntryFee" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Seats" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SeatsLeftPercent" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bgImage" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="userph" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Leaderboard" Member="Leaderboards">
+    <Type Name="Leaderboard">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Competitionid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LikeCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Likes" Member="Likes">
+    <Type Name="Like">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.LikeVideo" Member="LikeVideos">
+    <Type Name="LikeVideo">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Notifications" Member="Notifications">
+    <Type Name="Notification">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.PanelAccess" Member="PanelAccesses">
+    <Type Name="PanelAccess">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LoginID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LoginPassword" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UsersManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SubAdminManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NotificationManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="AddCompetitionManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ViewCompetitionManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CoinsManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VideosManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="WithdrawManagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Feedbackmanagement" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Post" Member="Posts">
+    <Type Name="Post">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Competitionid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Push_Notifications" Member="Push_Notifications">
+    <Type Name="Push_Notification">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.ReadUnread" Member="ReadUnreads">
+    <Type Name="ReadUnread">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Register" Member="Registers">
+    <Type Name="Register">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Share" Member="Shares">
+    <Type Name="Share">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.TaskHistory" Member="TaskHistories">
+    <Type Name="TaskHistory">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Userid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Task" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="DateTim" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.VideoViews" Member="VideoViews">
+    <Type Name="VideoView">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Viewcount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Wallet" Member="Wallets">
+    <Type Name="Wallet">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Walletbalance" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HOT.Withdraw" Member="Withdraws">
+    <Type Name="Withdraw">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Accountnumber" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IFSC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Branch" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="UPI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="HOT.AddPost" Method="AddPost">
+    <Parameter Name="Video" Parameter="video" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Mode" Parameter="mode" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="D" Parameter="d" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Thumbnail" Parameter="thumbnail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="creator" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Competitionid" Parameter="competitionid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="createorcontact" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.CheckFollow" Method="CheckFollow">
+    <Parameter Name="Followername" Parameter="followername" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="followed" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="CheckFollowResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.CheckJoinCompetition" Method="CheckJoinCompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="userph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="CheckJoinCompetitionResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.CheckLike" Method="CheckLike">
+    <Parameter Name="VideoId" Parameter="videoId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="CheckLikeResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.CommentCount" Method="CommentCount">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="CommentCountResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.Commentrplydel" Method="Commentrplydel">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeleteComment" Method="DeleteComment">
+    <Parameter Name="commentid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeleteFollow" Method="DeleteFollow">
+    <Parameter Name="Followername" Parameter="followername" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="followed" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeleteLike" Method="DeleteLike">
+    <Parameter Name="Videoid" Parameter="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeleteNotification" Method="DeleteNotification">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeletePost" Method="DeletePost">
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DeletePushNotification" Method="DeletePushNotification">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.DisplayChatlist" Method="DisplayChatlist">
+    <Parameter Name="Recieveremail" Parameter="recieveremail" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="DisplayChatlistResult">
+      <Column Name="ChatMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MessageTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MessageDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Messageresdedstatus" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OtherPartyName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OtherPartyEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.DisplayChatMessages" Method="DisplayChatMessages">
+    <Parameter Name="Recieveremail" Parameter="recieveremail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SenderEmail" Parameter="senderEmail" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="DisplayChatMessagesResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChatMessage" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MessageTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MessageDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Sendername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SenderEmail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Recievername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Recieveremail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Onlineofflinestatus" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Messageresdedstatus" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.DisplayChatNumber" Method="DisplayChatNumber">
+    <Parameter Name="Recieveremail" Parameter="recieveremail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SenderEmail" Parameter="senderEmail" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="DisplayChatNumberResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.DisplayLikes" Method="DisplayLikes">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="DisplayLikesResult">
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.EditProfile" Method="EditProfile">
+    <Parameter Name="Firstname" Parameter="firstname" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Lastname" Parameter="lastname" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="EmailId" Parameter="emailId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Birthday" Parameter="birthday" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="image" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Bio" Parameter="bio" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Insta" Parameter="insta" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="YT" Parameter="yT" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.GetBadge" Method="GetBadge">
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetBadgeResult">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetCCount" Method="GetCCount">
+    <Parameter Name="userph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCCountResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetComments" Method="GetComments">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCommentsResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="comentid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="datec" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetCommentsbycompetition" Method="GetCommentsbycompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCommentsbycompetitionResult">
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VideoId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetCommentsbycompetitionbyph" Method="GetCommentsbycompetitionbyph">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCommentsbycompetitionbyphResult">
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VideoId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetCommentsreply" Method="GetCommentsreply">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Rply" Parameter="rply" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCommentsreplyResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="comentid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="datec" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetCompetitionVideos" Method="GetCompetitionVideos">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetCompetitionVideosResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollow" Method="GetFollow">
+    <Parameter Name="followed" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Followername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="followed" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollower" Method="GetFollower">
+    <Parameter Name="Followername" Parameter="followername" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowerResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollowers" Method="GetFollowers">
+    <Parameter Name="Follower" Parameter="follower" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowersResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Followername" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="followed" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollowing" Method="GetFollowing">
+    <Parameter Name="creator" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowingResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollowingReal" Method="GetFollowingReal">
+    <Parameter Name="Followername" Parameter="followername" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowingRealResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetFollowingVideos" Method="GetFollowingVideos">
+    <Parameter Name="createorcontact" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetFollowingVideosResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetForYou" Method="GetForYou">
+    <ElementType Name="GetForYouResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetHistory" Method="GetHistory">
+    <Parameter Name="Ph" Parameter="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetHistoryResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Historyid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Historydate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Historyamt" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HistoryType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetJoinCompetition" Method="GetJoinCompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="userph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetJoinCompetitionResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Competitionname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Liveon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Endon" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ResultDate" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionBasis" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DisqualifyCriteria" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WinningAMT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EntryFee" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Seats" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="SeatsLeftPercent" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bgImage" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="userph" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetLeaderboard" Method="GetLeaderboard">
+    <Parameter Name="CompetitionID" Parameter="competitionID" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetLeaderboardResult">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LikeCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetLeaderboardAfterEnd" Method="GetLeaderboardAfterEnd">
+    <Parameter Name="id" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetLeaderboardAfterEndResult">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Competitionid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LikeCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetLeaderboardForInsert" Method="GetLeaderboardForInsert">
+    <Parameter Name="CompetitionID" Parameter="competitionID" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetLeaderboardForInsertResult">
+      <Column Name="VideoId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LikeCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CompetitionID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetLikesbycompetition" Method="GetLikesbycompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetLikesbycompetitionResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetLikesbycompetitionbyph" Method="GetLikesbycompetitionbyph">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetLikesbycompetitionbyphResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetMyVideos" Method="GetMyVideos">
+    <Parameter Name="createorcontact" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetMyVideosResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetPost" Method="GetPost">
+    <Parameter Name="Creator" Parameter="creator" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetPostResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Competitionid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetProfile" Method="GetProfile">
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetProfileResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetProfilebyusername" Method="GetProfilebyusername">
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="GetProfilebyusernameResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetPushNotificationsByPhone" Method="GetPushNotificationsByPhone">
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetPushNotificationsByPhoneResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetReadUnread" Method="GetReadUnread">
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetReadUnreadResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetSharesbycompetition" Method="GetSharesbycompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetSharesbycompetitionResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ShareCount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetSharesbycompetitionbyph" Method="GetSharesbycompetitionbyph">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetSharesbycompetitionbyphResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ShareCount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetStanding" Method="GetStanding">
+    <Parameter Name="CID" Parameter="cID" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="USername" Parameter="uSername" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetStandingResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Position" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Prize" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CID" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetVideoInfo" Method="GetVideoInfo">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetVideoInfoResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Video" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Mode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="thumbnail" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Likecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CommentCount" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetVideoShare" Method="GetVideoShare">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetVideoShareResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Sharecount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetVideoViews" Method="GetVideoViews">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetVideoViewsResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Viewcount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetViewsbycompetition" Method="GetViewsbycompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetViewsbycompetitionResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Viewcount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetViewsbycompetitionbyph" Method="GetViewsbycompetitionbyph">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetViewsbycompetitionbyphResult">
+      <Column Name="creator" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="createorcontact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Viewcount" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.GetWallet" Method="GetWallet">
+    <Parameter Name="Ph" Parameter="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="GetWalletResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Walletbalance" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.InsertChats" Method="InsertChats">
+    <Parameter Name="ChatMessage" Parameter="chatMessage" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="Time" Parameter="time" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Sendername" Parameter="sendername" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SenderEmail" Parameter="senderEmail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Recievername" Parameter="recievername" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Recieveremail" Parameter="recieveremail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Onlineofflinestatus" Parameter="onlineofflinestatus" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Messageresdedstatus" Parameter="messageresdedstatus" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertComment" Method="InsertComment">
+    <Parameter Name="Comment" Parameter="comment" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="username" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="logo" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Rply" Parameter="rply" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="datec" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertFeedBack" Method="InsertFeedBack">
+    <Parameter Name="Feedback" Parameter="feedback" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="ExtraColumn" Parameter="extraColumn" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="image" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertFollow" Method="InsertFollow">
+    <Parameter Name="Followername" Parameter="followername" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="followed" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertHistory" Method="InsertHistory">
+    <Parameter Name="Historyid" Parameter="historyid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="HistoryDate" Parameter="historyDate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Historyamt" Parameter="historyamt" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Type" Parameter="type" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertJoinCompetition" Method="InsertJoinCompetition">
+    <Parameter Name="cid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="userph" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Competitionname" Parameter="competitionname" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Liveon" Parameter="liveon" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Endon" Parameter="endon" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ResultDate" Parameter="resultDate" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CompetitionBasis" Parameter="competitionBasis" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="CompetitionCriteria" Parameter="competitionCriteria" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DisqualifyCriteria" Parameter="disqualifyCriteria" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="WinningAMT" Parameter="winningAMT" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="EntryFee" Parameter="entryFee" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Seats" Parameter="seats" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SeatsLeftPercent" Parameter="seatsLeftPercent" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="bgImage" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Videoid" Parameter="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertLike" Method="InsertLike">
+    <Parameter Name="VideoId" Parameter="videoId" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertLikes" Method="InsertLikes">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertNotification" Method="InsertNotification">
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Date" Parameter="date" Type="System.String" DbType="NVarChar(200)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertPushNotification" Method="InsertPushNotification">
+    <Parameter Name="Image" Parameter="image" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Title" Parameter="title" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="Message" Parameter="message" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="DateTime" Parameter="dateTime" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertReadUnRead" Method="InsertReadUnRead">
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertVideoShare" Method="InsertVideoShare">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertVideoViews" Method="InsertVideoViews">
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertWallet" Method="InsertWallet">
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.InsertWithdraw" Method="InsertWithdraw">
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Mode" Parameter="mode" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Accountnumber" Parameter="accountnumber" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="IFSC" Parameter="iFSC" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Branch" Parameter="branch" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Name" Parameter="name" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="UPI" Parameter="uPI" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Amount" Parameter="amount" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.Login" Method="Login">
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="LoginResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.MyFollowers" Method="MyFollowers">
+    <Parameter Name="Ph" Parameter="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="MyFollowersResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.MyFollowing" Method="MyFollowing">
+    <Parameter Name="Ph" Parameter="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="MyFollowingResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.Search" Method="Search">
+    <ElementType Name="SearchResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Firstname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Lastname" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="EmailId" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Bio" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Insta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="YT" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IMEI" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RegistrationDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Dayss" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ActiveDays" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Block" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FCMToken" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.ShowLike" Method="ShowLike">
+    <Parameter Name="Videoid" Parameter="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="contact" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="ShowLikeResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Videoid" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="contact" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.ShowNotifications" Method="ShowNotifications">
+    <Parameter Name="Ph" Parameter="ph" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="ShowNotificationsResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateTime" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="HOT.UpdateActiveCount" Method="UpdateActiveCount">
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateBalanceAdd" Method="UpdateBalanceAdd">
+    <Parameter Name="Balance" Parameter="balance" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateBalanceMinus" Method="UpdateBalanceMinus">
+    <Parameter Name="Balance" Parameter="balance" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateChatNumber" Method="UpdateChatNumber">
+    <Parameter Name="Recieveremail" Parameter="recieveremail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="SenderEmail" Parameter="senderEmail" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateCompetition" Method="UpdateCompetition">
+    <Parameter Name="Live" Parameter="live" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateCompetitionEnd" Method="UpdateCompetitionEnd">
+    <Parameter Name="Live" Parameter="live" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateDayssCount" Method="UpdateDayssCount">
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateIMEI" Method="UpdateIMEI">
+    <Parameter Name="IMEI" Parameter="iMEI" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateJoinedCompetition" Method="UpdateJoinedCompetition">
+    <Parameter Name="Live" Parameter="live" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateJoinedCompetitionEnd" Method="UpdateJoinedCompetitionEnd">
+    <Parameter Name="Live" Parameter="live" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateLikes" Method="UpdateLikes">
+    <Parameter Name="count" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdatePost" Method="UpdatePost">
+    <Parameter Name="Mode" Parameter="mode" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="D" Parameter="d" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="Thumbnail" Parameter="thumbnail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="creator" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="id" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateReadUnRead" Method="UpdateReadUnRead">
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateReadUnReadAll" Method="UpdateReadUnReadAll">
+    <Parameter Name="Status" Parameter="status" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="phone" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateSchedule" Method="UpdateSchedule">
+    <Parameter Name="DateTime" Parameter="dateTime" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateVideoMode" Method="UpdateVideoMode">
+    <Parameter Name="Mode" Parameter="mode" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Videoid" Parameter="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateVideoShare" Method="UpdateVideoShare">
+    <Parameter Name="count" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateVideoViews" Method="UpdateVideoViews">
+    <Parameter Name="count" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="videoid" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UserRegister" Method="UserRegister">
+    <Parameter Name="Firstname" Parameter="firstname" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Lastname" Parameter="lastname" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="EmailId" Parameter="emailId" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Phone" Parameter="phone" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Birthday" Parameter="birthday" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="username" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="image" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Bio" Parameter="bio" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Insta" Parameter="insta" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="YT" Parameter="yT" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="IMEI" Parameter="iMEI" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Dayss" Parameter="dayss" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="FCM" Parameter="fCM" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="ActiveDays" Parameter="activeDays" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="HOT.UpdateFBTokens" Method="UpdateFBTokens">
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Token" Parameter="token" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
