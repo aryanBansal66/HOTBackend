@@ -1,0 +1,426 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2734F09E-9CCF-4652-8B20-2586961C6819}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HouseOfTalent</RootNamespace>
+    <AssemblyName>HouseOfTalent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44378</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Apis, Version=1.68.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.68.0\lib\net462\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.68.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.68.0\lib\net462\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.68.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.68.0\lib\net462\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.CodeDom, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.CodeDom.7.0.0\lib\net462\System.CodeDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.html" />
+    <Content Include="APIFolder\WebService1.asmx" />
+    <Content Include="Community.html" />
+    <Content Include="Content.html" />
+    <Content Include="Copyright.html" />
+    <Content Include="DownloadApp\WebForm1.aspx" />
+    <Content Include="EULA.html" />
+    <Content Include="Images\janakpur.png" />
+    <Content Include="Images\photo_6334714554579270560_y.jpg" />
+    <Content Include="Images\Screenshot %281%29.png" />
+    <Content Include="Images\Screenshot %281266%29.png" />
+    <Content Include="Images\Screenshot %2820%29.png" />
+    <Content Include="Images\Screenshot %2823%29.png" />
+    <Content Include="Images\Screenshot %2850%29.png" />
+    <Content Include="Images\Screenshot %2859%29.png" />
+    <Content Include="Images\Screenshot %2870%29.png" />
+    <Content Include="img.jpg" />
+    <Content Include="Panel\ActiveUsers.aspx" />
+    <Content Include="Panel\AddCompetition.aspx" />
+    <Content Include="Panel\AddNotifications.aspx" />
+    <Content Include="Panel\Coins.aspx" />
+    <Content Include="Panel\CompetitionVideos.aspx" />
+    <Content Include="Panel\Content.aspx" />
+    <Content Include="Panel\CreateSubAdmin.aspx" />
+    <Content Include="Panel\Dashboard.aspx" />
+    <Content Include="Panel\Dashboard.css" />
+    <Content Include="Panel\Feedback.aspx" />
+    <Content Include="Panel\GetAllDetails.aspx" />
+    <Content Include="Panel\GetCompetition.aspx" />
+    <Content Include="Panel\GetLeaderboard.aspx" />
+    <Content Include="Panel\GetSubadmin.aspx" />
+    <Content Include="Panel\index.aspx" />
+    <Content Include="Panel\JoinedCompetition.aspx" />
+    <Content Include="Panel\Login.css" />
+    <Content Include="Panel\Main.css" />
+    <Content Include="Panel\Notifications.aspx" />
+    <Content Include="Panel\SubAdminHistory.aspx" />
+    <Content Include="Panel\Textbox.css" />
+    <Content Include="Panel\Users.aspx" />
+    <Content Include="Panel\VideoDetails.aspx" />
+    <Content Include="Panel\ViewDetails.aspx" />
+    <Content Include="Panel\WalletHistory.aspx" />
+    <Content Include="Panel\Withdraw.aspx" />
+    <Content Include="Privacy.html" />
+    <Content Include="PrivacyandPolicy.html" />
+    <Content Include="Refund.html" />
+    <Content Include="Responsible.html" />
+    <Content Include="Rules.html" />
+    <Content Include="Terms.html" />
+    <Content Include="TermsandConditions.html" />
+    <Content Include="tutee-starter\assets\1.png" />
+    <Content Include="tutee-starter\assets\2.png" />
+    <Content Include="tutee-starter\assets\3.png" />
+    <Content Include="tutee-starter\assets\css\stylesheet.css" />
+    <Content Include="tutee-starter\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="tutee-starter\assets\images\1.jpg" />
+    <Content Include="tutee-starter\assets\images\2.jpg" />
+    <Content Include="tutee-starter\assets\images\3.jpg" />
+    <Content Include="tutee-starter\assets\images\a1.jpg" />
+    <Content Include="tutee-starter\assets\images\a2.jpg" />
+    <Content Include="tutee-starter\assets\images\b1.jpg" />
+    <Content Include="tutee-starter\assets\images\b2.jpg" />
+    <Content Include="tutee-starter\assets\images\b3.jpg" />
+    <Content Include="tutee-starter\assets\images\b4.jpg" />
+    <Content Include="tutee-starter\assets\images\b5.jpg" />
+    <Content Include="tutee-starter\assets\images\b6.jpg" />
+    <Content Include="tutee-starter\assets\images\b7.jpg" />
+    <Content Include="tutee-starter\assets\images\b8.jpg" />
+    <Content Include="tutee-starter\assets\images\c1.jpg" />
+    <Content Include="tutee-starter\assets\images\c2.jpg" />
+    <Content Include="tutee-starter\assets\images\c3.jpg" />
+    <Content Include="tutee-starter\assets\images\t1.jpg" />
+    <Content Include="tutee-starter\assets\images\t2.jpg" />
+    <Content Include="tutee-starter\assets\images\t3.jpg" />
+    <Content Include="tutee-starter\assets\images\t4.jpg" />
+    <Content Include="tutee-starter\assets\js\all.js" />
+    <Content Include="tutee-starter\assets\js\app.js" />
+    <Content Include="tutee-starter\assets\js\bootstrap.min.js" />
+    <Content Include="tutee-starter\assets\js\jquery-3.3.1.min.js" />
+    <Content Include="tutee-starter\assets\js\owl.carousel.js" />
+    <Content Include="tutee-starter\assets\js\particles.min.js.js" />
+    <Content Include="tutee-starter\assets\js\popper.min.js" />
+    <Content Include="tutee-starter\assets\js\script.js" />
+    <Content Include="tutee-starter\assets\hotlogo.png" />
+    <Content Include="tutee-starter\assets\videos\video.mp4" />
+    <Content Include="index.html" />
+    <Content Include="tutee-starter\assets\hotimg1.png" />
+    <Content Include="Web.config" />
+    <Content Include="img1.jpeg" />
+    <Content Include="img2.jpeg" />
+    <Content Include="img3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIFolder\DataClasses11.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="APIFolder\WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DownloadApp\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadApp\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ActiveUsers.aspx.cs">
+      <DependentUpon>ActiveUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\ActiveUsers.aspx.designer.cs">
+      <DependentUpon>ActiveUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\AddCompetition.aspx.cs">
+      <DependentUpon>AddCompetition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\AddCompetition.aspx.designer.cs">
+      <DependentUpon>AddCompetition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\AddNotifications.aspx.cs">
+      <DependentUpon>AddNotifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\AddNotifications.aspx.designer.cs">
+      <DependentUpon>AddNotifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Coins.aspx.cs">
+      <DependentUpon>Coins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Coins.aspx.designer.cs">
+      <DependentUpon>Coins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CompetitionVideos.aspx.cs">
+      <DependentUpon>CompetitionVideos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\CompetitionVideos.aspx.designer.cs">
+      <DependentUpon>CompetitionVideos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CreateSubAdmin.aspx.cs">
+      <DependentUpon>CreateSubAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\CreateSubAdmin.aspx.designer.cs">
+      <DependentUpon>CreateSubAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\GetAllDetails.aspx.cs">
+      <DependentUpon>GetAllDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\GetAllDetails.aspx.designer.cs">
+      <DependentUpon>GetAllDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\GetCompetition.aspx.cs">
+      <DependentUpon>GetCompetition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\GetCompetition.aspx.designer.cs">
+      <DependentUpon>GetCompetition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\GetLeaderboard.aspx.cs">
+      <DependentUpon>GetLeaderboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\GetLeaderboard.aspx.designer.cs">
+      <DependentUpon>GetLeaderboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\GetSubadmin.aspx.cs">
+      <DependentUpon>GetSubadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\GetSubadmin.aspx.designer.cs">
+      <DependentUpon>GetSubadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\JoinedCompetition.aspx.cs">
+      <DependentUpon>JoinedCompetition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\JoinedCompetition.aspx.designer.cs">
+      <DependentUpon>JoinedCompetition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Notifications.aspx.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Notifications.aspx.designer.cs">
+      <DependentUpon>Notifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\SubAdminHistory.aspx.cs">
+      <DependentUpon>SubAdminHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\SubAdminHistory.aspx.designer.cs">
+      <DependentUpon>SubAdminHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\VideoDetails.aspx.cs">
+      <DependentUpon>VideoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\VideoDetails.aspx.designer.cs">
+      <DependentUpon>VideoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\ViewDetails.aspx.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\ViewDetails.aspx.designer.cs">
+      <DependentUpon>ViewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\WalletHistory.aspx.cs">
+      <DependentUpon>WalletHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\WalletHistory.aspx.designer.cs">
+      <DependentUpon>WalletHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\Withdraw.aspx.cs">
+      <DependentUpon>Withdraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Panel\Withdraw.aspx.designer.cs">
+      <DependentUpon>Withdraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="APIFolder\DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses11.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="APIFolder\DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <Content Include="APIFolder\service-account.json" />
+    <None Include="packages.config" />
+    <Content Include="Panel\Site1.Master" />
+    <Content Include="Panel\service-account.json" />
+    <Content Include="tutee-starter\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="tutee-starter\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="tutee-starter\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="tutee-starter\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="tutee-starter\assets\fonts\FontAwesome.otf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63759</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44378/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
